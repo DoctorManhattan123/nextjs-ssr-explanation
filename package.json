@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-workshop-prep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:base": "tsc examples/server-base.tsx && node examples/server-base.js",
+    "start:jsx": "tsc --jsx react examples/server-jsx.tsx && node examples/server-jsx.js",
+    "start:components": "tsc --jsx react examples/server-components.tsx && node examples/server-components.js",
+    "start:routing": "tsc --jsx react examples/server-routing.tsx && node examples/server-routing.js",
+    "start:async": "tsc --jsx react examples/server-async.tsx && node examples/server-async.js",
+    "start:client": "tsc --jsx react examples/server-client.tsx && node examples/server-client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/http-server": "^0.12.4",
+    "escape-html": "^1.0.3",
+    "fastify": "^4.26.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "http-server": "^14.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanitize-filename": "^1.6.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
